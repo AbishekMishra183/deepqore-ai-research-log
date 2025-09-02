@@ -73,4 +73,44 @@ That’s where **GitHub** comes in.
 - **GitHub** is an online platform to host and collaborate on Git repositories.  
 - Together, they make managing and sharing code easy.  
 
-![Git vs GitHub Diagram](https://www.geeksforgeeks.org/git/git-features/)
+![Git vs GitHub Diagram](https://github.com/user-attachments/assets/7c6f3c67-a792-4c08-9244-799f3d2e6bac)
+
+# GitLab vs Bitbucket
+
+This document explains GitLab and Bitbucket in a simple, easy-to-understand way and highlights their key differences.
+
+---
+
+## **1. GitLab**
+
+- **What it is:** A platform to store Git repositories, collaborate with your team, and automate testing and deployment.  
+- **Analogy:** GitLab is like a **smart workshop**. You store your tools (code), and the workshop can **check your work automatically, fix errors, and even assemble the final product**.  
+- **Why use it:** Ideal for teams that want a **complete development workflow in one place** – code storage, collaboration, testing, and deployment.  
+- **How it works:** You push your code → GitLab can automatically run tests → You can deploy the project directly from GitLab.
+
+---
+
+## **2. Bitbucket**
+
+- **What it is:** A platform to store Git repositories and collaborate with your team, with simple automation features.  
+- **Analogy:** Bitbucket is like an **organized locker room**. You store your tools (code) in lockers, and your team can check them out, make changes, and put them back.  
+- **Why use it:** Best for teams using **Atlassian tools** like Jira or Trello.  
+- **How it works:** You push your code → teammates review and merge changes → optional pipelines can automate small tasks.
+
+---
+
+## **Key Differences Between GitLab and Bitbucket**
+
+| Feature                 | GitLab                                 | Bitbucket                               |
+|-------------------------|----------------------------------------|----------------------------------------|
+| **CI/CD (Automation)**  | Full built-in pipelines for testing & deployment | Basic pipelines for automation tasks  |
+| **Hosting Options**     | Cloud-hosted or self-hosted             | Cloud-hosted or self-hosted             |
+| **Best Use Case**       | Complete DevOps workflow in one place  | Teams using Atlassian tools like Jira/Trello |
+| **Complexity**          | More advanced features for DevOps      | Simpler and easier to use               |
+| **Analogy**             | Smart workshop (code + tests + deployment) | Organized locker room (store & share tools) |
+
+
+ Version Control Tools: Git, GitHub, GitLab, Bitbucket
+
+> **Note:** Git, GitHub, GitLab, and Bitbucket are all tools related to **Version Control Systems (VCS)**. They help developers track changes, collaborate on code, and manage projects efficiently.
+
