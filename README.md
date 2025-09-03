@@ -113,4 +113,27 @@ This document explains GitLab and Bitbucket in a simple, easy-to-understand way 
  Version Control Tools: Git, GitHub, GitLab, Bitbucket
 
 > **Note:** Git, GitHub, GitLab, and Bitbucket are all tools related to **Version Control Systems (VCS)**. They help developers track changes, collaborate on code, and manage projects efficiently.
+# 🛠️ Git Undo & Restore Operations Interactive Guide
+
+This interactive guide helps you quickly decide **which Git undo operation to use** in different scenarios.  
+
+
+---
+
+
+
+
+```
+flowchart TD
+    A[Have you made changes?] --> B{Are changes staged?}
+    B -->|No| C[Use `git restore <file>` or `git restore .` to discard changes]
+    B -->|Yes| D{Have you committed changes?}
+    D -->|No| E[Use `git restore --staged <file>` to unstage changes]
+    D -->|Yes| F{Have you pushed to remote?}
+    F -->|No| G{Do you want to keep changes?}
+    G -->|Yes| H[Undo last commit but keep staged: `git reset --soft HEAD~1`]
+    G -->|No| I[Undo last commit and unstage: `git reset --mixed HEAD~1`]
+    I --> J[Discard last commit completely: `git reset --hard HEAD~1`]
+    F -->|Yes| K[Use `git revert <commit-hash>` to undo safely on remote]
+    H --> L[Optional: Edit changes and recommit]
 
